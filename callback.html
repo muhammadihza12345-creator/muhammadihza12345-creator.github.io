@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login complete - Auto Clipper</title><link rel="stylesheet" href="style.css"></head><body><main><nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+<h1>Almost done</h1>
+<p>Copy the full address of this page and paste it into the terminal where Auto Clipper is waiting.</p>
+<input id="u" class="box" readonly>
+<button id="b" type="button">Copy</button>
+<p id="m" class="muted">The code works only for a few minutes, so paste it right away.</p>
+<script>
+const u=document.getElementById('u');u.value=location.href;
+const p=new URLSearchParams(location.search);
+if(p.get('error')){document.getElementById('m').textContent='Login was not completed: '+(p.get('error_description')||p.get('error'));}
+else if(!p.get('code')){document.getElementById('m').textContent='No login code in this address. Start the login again from the terminal.';}
+document.getElementById('b').onclick=async()=>{try{await navigator.clipboard.writeText(u.value)}catch(e){u.select();document.execCommand('copy')}document.getElementById('b').textContent='Copied';};
+</script>
+<p class="muted">Contact: <a href="mailto:muhammadihza12345@gmail.com">muhammadihza12345@gmail.com</a></p></main></body></html>
