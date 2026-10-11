@@ -1,10 +1,63 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Auto Clipper</title><link rel="stylesheet" href="style.css"></head><body><main><nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
-<h1>Auto Clipper</h1>
-<p>Auto Clipper is a personal tool that runs on its owner's own computer. It turns long videos into short vertical clips and publishes them to the owner's own accounts on YouTube, TikTok, Facebook and Instagram on a schedule.</p>
-<p>It is not a public service: no one else can sign up, and it only ever posts to accounts its owner has connected and authorized.</p>
-<h2>What it does</h2>
-<ul><li>Finds highlights in a video and makes 9:16 clips with subtitles and a thumbnail.</li>
-<li>Uploads each clip with its title, description and hashtags to the owner's connected accounts.</li>
-<li>Sends the owner a status message after each upload.</li></ul>
-<p class="muted">Contact: <a href="mailto:muhammadihza12345@gmail.com">muhammadihza12345@gmail.com</a></p></main></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auto Clipper: turn long videos into short clips</title>
+<meta name="description" content="Auto Clipper turns long videos into vertical short clips with subtitles and publishes them to the owner's own TikTok, YouTube, Instagram and Facebook accounts on a schedule.">
+<link rel="icon" type="image/png" href="app-icon.png"><link rel="apple-touch-icon" href="app-icon.png">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><a class="brand" href="index.html"><img src="app-icon.png" alt="" width="32" height="32">Auto Clipper</a>
+<nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav></header>
+<main>
+<section class="hero">
+<img class="hero-icon" src="app-icon.png" alt="Auto Clipper icon" width="96" height="96">
+<h1>Turn long videos into short clips, and post them on schedule</h1>
+<p class="lead">Auto Clipper finds the best moments in a long video, cuts them into vertical 9:16 clips with subtitles, and publishes them to the creator's own TikTok, YouTube, Instagram and Facebook accounts at the times they choose.</p>
+</section>
+
+<section id="features">
+<h2>Features</h2>
+<div class="grid">
+<div class="card"><h3>Highlight finder</h3><p>Transcribes the video and picks 15-60 second moments that stand on their own, with a strong opening and a clear ending.</p></div>
+<div class="card"><h3>Vertical reframing</h3><p>Crops to 9:16 and follows the speaker's face, or fits the full frame over a blurred background for slides and group shots.</p></div>
+<div class="card"><h3>Readable subtitles</h3><p>Word-by-word captions burned into the clip, plus an optional title line and cover image.</p></div>
+<div class="card"><h3>Post text</h3><p>A title, description and hashtags for each platform, ready before anything is published.</p></div>
+<div class="card"><h3>Review before posting</h3><p>Every clip is sent to the owner for approval first. Nothing is published without the owner's OK.</p></div>
+<div class="card"><h3>Scheduled publishing</h3><p>Approved clips are published to the connected accounts at chosen times, with a status message after each post.</p></div>
+</div>
+</section>
+
+<section id="how">
+<h2>How it works</h2>
+<ol class="steps">
+<li><strong>Add a video.</strong> Paste a video link or choose a file.</li>
+<li><strong>Clips are made.</strong> Highlights are found, reframed, subtitled and given a cover and post text.</li>
+<li><strong>Review.</strong> The owner watches each clip and approves or skips it.</li>
+<li><strong>Connect accounts.</strong> The owner signs in once with each platform's official login (TikTok Login Kit, Google, Meta) and grants permission to post.</li>
+<li><strong>Publish.</strong> Approved clips are uploaded to the owner's own accounts at the scheduled times.</li>
+</ol>
+</section>
+
+<section id="tiktok">
+<h2>TikTok integration</h2>
+<p>Auto Clipper uses TikTok Login Kit to let the account owner authorize the app, and the Content Posting API to upload the owner's approved clips to their own TikTok account with the caption they reviewed. It reads only basic profile information (display name) to show which account is connected. It never posts to accounts that have not authorized it, and access can be revoked at any time in TikTok's settings.</p>
+</section>
+
+<section id="privacy">
+<h2>Your data</h2>
+<p>Videos, clips and login tokens stay on the owner's own computer. Nothing is sold or shared with third parties. Read the full <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+</section>
+
+<section id="faq">
+<h2>FAQ</h2>
+<details><summary>Who can use Auto Clipper?</summary><p>It is run by its owner on their own computer to publish to accounts they own and have connected. There is no public sign-up.</p></details>
+<details><summary>Does it post without asking?</summary><p>No. Each clip is approved by the owner before it is scheduled.</p></details>
+<details><summary>Which platforms are supported?</summary><p>TikTok, YouTube Shorts, Instagram Reels and Facebook Reels, through each platform's official API.</p></details>
+<details><summary>How do I disconnect an account?</summary><p>Remove the app's access in that platform's settings (in TikTok: Settings and privacy, Security, Apps and services). The app then stops posting to that account.</p></details>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Questions or data requests: <a href="mailto:muhammadihza12345@gmail.com">muhammadihza12345@gmail.com</a></p>
+</section>
+</main>
+<footer><span>© 2026 Auto Clipper</span><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="mailto:muhammadihza12345@gmail.com">Contact</a></footer>
+</body></html>
